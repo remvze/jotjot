@@ -1,11 +1,30 @@
 {
   "name": "jotjot",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "bin": {
     "jot": "dist/bin/app.js"
   },
-  "main": "index.js",
+  "main": "dist/bin/app.js",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remvze/jotjot.git"
+  },
+  "homepage": "https://github.com/remvze/jotjot#readme",
+  "bugs": {
+    "url": "https://github.com/remvze/jotjot/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "lint": "biome check .",
     "lint:fix": "biome lint --write .",
@@ -20,10 +39,17 @@
     "dev": "tsup-node --watch",
     "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "cli",
+    "notes",
+    "note-taking",
+    "jot",
+    "terminal",
+    "productivity"
+  ],
+  "author": "Maze",
+  "license": "MIT",
+  "description": "A minimal CLI for quickly jotting down notes.",
   "devDependencies": {
     "@biomejs/biome": "2.0.6",
     "@commitlint/cli": "19.8.1",
